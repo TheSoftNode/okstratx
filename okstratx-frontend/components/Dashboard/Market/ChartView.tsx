@@ -228,7 +228,7 @@ import { useWebSocket } from "@/hooks/useWebSocket";
 import WebSocketStatus from "@/components/Socket/WebSocketStatus";
 import PriceCard from "./PriceCard";
 import MarketNews from "./MarketNews";
-import { MarketDataItem, TIME_INTERVALS, WATCHED_PAIRS } from "@/app/dashboard/market/page";
+import { MarketDataItem, TIME_INTERVALS, WATCHED_PAIRS } from "../helpers/util";
 
 interface ChartViewProps {
     selectedPair: string;

@@ -36,8 +36,8 @@ const TradingSignalsFeed = ({
 
     // Connect to the WebSocket - either for a specific strategy or all signals
     const wsEndpoint = strategyId
-        ? `ws://localhost:8000/ws/strategy_signals/${strategyId}`
-        : `ws://localhost:8000/ws/strategy_signals`;
+        ? `wss://okstratx-api.onrender.com/ws/strategy_signals/${strategyId}`
+        : `wss://okstratx-api.onrender.com/ws/strategy_signals`;
 
     const { data, isConnected, isConnecting, error } = useWebSocket<TradingSignal>(wsEndpoint);
 

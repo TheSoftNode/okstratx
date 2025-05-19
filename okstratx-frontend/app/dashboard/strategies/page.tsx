@@ -41,7 +41,8 @@ import {
     Calendar,
     XCircle,
     CopyCheck,
-    Archive
+    Archive,
+    Flame
 } from "lucide-react";
 
 import { Alert, AlertDescription } from "@/components/ui/alert";
@@ -95,16 +96,16 @@ const StrategiesPage = () => {
     // Function to get strategy icon based on type
     const getStrategyIcon = (type: StrategyType) => {
         switch (type) {
-            case StrategyType.TREND_FOLLOWING:
+            case StrategyType.MOMENTUM:
                 return <TrendingUp className="h-4 w-4" />;
             case StrategyType.MEAN_REVERSION:
                 return <RefreshCw className="h-4 w-4" />;
             case StrategyType.BREAKOUT:
                 return <Activity className="h-4 w-4" />;
-            case StrategyType.SENTIMENT:
+            case StrategyType.ARBITRAGE:
                 return <Brain className="h-4 w-4" />;
-            case StrategyType.ML_BASED:
-                return <Bot className="h-4 w-4" />;
+            case StrategyType.MARKET_MAKING:
+                return <Flame className="h-4 w-4" />;
             default:
                 return <LineChart className="h-4 w-4" />;
         }
@@ -338,11 +339,11 @@ const StrategiesPage = () => {
                                                 </TableCell>
                                                 <TableCell>
                                                     <div className="flex items-center gap-3">
-                                                        <div className={`p-1.5 rounded-md ${strategy.type === StrategyType.TREND_FOLLOWING ? 'bg-blue-100 text-blue-700 dark:bg-blue-900/50 dark:text-blue-300' :
+                                                        <div className={`p-1.5 rounded-md ${strategy.type === StrategyType.MOMENTUM ? 'bg-blue-100 text-blue-700 dark:bg-blue-900/50 dark:text-blue-300' :
                                                             strategy.type === StrategyType.MEAN_REVERSION ? 'bg-purple-100 text-purple-700 dark:bg-purple-900/50 dark:text-purple-300' :
                                                                 strategy.type === StrategyType.BREAKOUT ? 'bg-amber-100 text-amber-700 dark:bg-amber-900/50 dark:text-amber-300' :
-                                                                    strategy.type === StrategyType.SENTIMENT ? 'bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-300' :
-                                                                        strategy.type === StrategyType.ML_BASED ? 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300' :
+                                                                    strategy.type === StrategyType.ARBITRAGE ? 'bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-300' :
+                                                                        strategy.type === StrategyType.MARKET_MAKING ? 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300' :
                                                                             'bg-gray-100 text-gray-700 dark:bg-gray-900 dark:text-gray-300'
                                                             }`}>
                                                             {getStrategyIcon(strategy.type)}

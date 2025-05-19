@@ -86,12 +86,7 @@ export const Navbar = () => {
                                 <Link href="/dashboard">Demo</Link>
                             </Button>
                             <WalletConnectButton />
-                            {/* <Button
-                                asChild
-                                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-md hover:shadow-lg transition-all duration-300"
-                            >
-                                <Link href="/dashboard">Launch App</Link>
-                            </Button> */}
+
                         </div>
                     </div>
 

@@ -3,7 +3,7 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowUpRight, ArrowDownRight } from "lucide-react";
-import { WatchedPair } from "@/app/dashboard/market/page";
+import { WatchedPair } from "../helpers/util";
 
 interface PriceCardProps {
     pair: WatchedPair;

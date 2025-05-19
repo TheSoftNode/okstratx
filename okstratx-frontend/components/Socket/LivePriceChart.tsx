@@ -45,7 +45,7 @@ const LivePriceChart = ({
 
     // Connect to the WebSocket
     const { data, isConnected, isConnecting, error } = useWebSocket<PriceData>(
-        `ws://localhost:8000/ws/market_data`,
+        `wss://okstratx-api.onrender.com/ws/market_data`,
         symbol
     );
 

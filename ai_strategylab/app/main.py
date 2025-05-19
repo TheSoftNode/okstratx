@@ -6,6 +6,10 @@ from app.core.config import get_settings
 from app.api.routes import router as api_router
 from app.api.websocket_routes import router as websocket_router
 from app.db.database import Base, engine
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 # Configure logging

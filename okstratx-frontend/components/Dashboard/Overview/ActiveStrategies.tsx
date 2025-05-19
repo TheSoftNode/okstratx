@@ -41,15 +41,15 @@ export const ActiveStrategies = ({
     // Function to get strategy icon based on type
     const getStrategyIcon = (type: StrategyType) => {
         switch (type) {
-            case StrategyType.TREND_FOLLOWING:
+            case StrategyType.MOMENTUM:
                 return <TrendingUp className="h-4 w-4" />;
             case StrategyType.MEAN_REVERSION:
                 return <RefreshCw className="h-4 w-4" />;
             case StrategyType.BREAKOUT:
                 return <Activity className="h-4 w-4" />;
-            case StrategyType.SENTIMENT:
+            case StrategyType.ARBITRAGE:
                 return <Brain className="h-4 w-4" />;
-            case StrategyType.ML_BASED:
+            case StrategyType.MARKET_MAKING:
                 return <Bot className="h-4 w-4" />;
             default:
                 return <LineChart className="h-4 w-4" />;
@@ -59,15 +59,15 @@ export const ActiveStrategies = ({
     // Function to get background color based on strategy type
     const getStrategyTypeStyles = (type: StrategyType) => {
         switch (type) {
-            case StrategyType.TREND_FOLLOWING:
+            case StrategyType.MOMENTUM:
                 return 'bg-blue-100 text-blue-700 dark:bg-blue-900/50 dark:text-blue-300';
             case StrategyType.MEAN_REVERSION:
                 return 'bg-purple-100 text-purple-700 dark:bg-purple-900/50 dark:text-purple-300';
             case StrategyType.BREAKOUT:
                 return 'bg-amber-100 text-amber-700 dark:bg-amber-900/50 dark:text-amber-300';
-            case StrategyType.SENTIMENT:
+            case StrategyType.ARBITRAGE:
                 return 'bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-300';
-            case StrategyType.ML_BASED:
+            case StrategyType.MARKET_MAKING:
                 return 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300';
             default:
                 return 'bg-gray-100 text-gray-700 dark:bg-gray-900 dark:text-gray-300';

@@ -1103,31 +1103,6 @@ const HeroSection = () => {
                                 </Link>
                             </Button>
                         </motion.div>
-
-                        {/* Badges for technology highlights - more compact and refined */}
-                        {/* <motion.div
-                            variants={itemVariants}
-                            className="inline-flex flex-wrap justify-center lg:justify-start gap-2"
-                        >
-                            {[
-                                { label: "Real-time Execution", icon: <Zap className="h-3 w-3 mr-1" />, color: "bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-900/30 dark:text-blue-300 dark:border-blue-800/60" },
-                                { label: "Reinforcement Learning", icon: <Brain className="h-3 w-3 mr-1" />, color: "bg-green-50 text-green-700 border-green-200 dark:bg-green-900/30 dark:text-green-300 dark:border-green-800/60" },
-                                { label: "Adaptive Strategies", icon: <RefreshCw className="h-3 w-3 mr-1" />, color: "bg-purple-50 text-purple-700 border-purple-200 dark:bg-purple-900/30 dark:text-purple-300 dark:border-purple-800/60" },
-                                { label: "Multi-Agent System", icon: <Bot className="h-3 w-3 mr-1" />, color: "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-900/30 dark:text-amber-300 dark:border-amber-800/60" },
-                            ].map((badge, index) => (
-                                <motion.div
-                                    key={badge.label}
-                                    initial={{ opacity: 0, y: 10 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: 0.8 + index * 0.1 }}
-                                >
-                                    <Badge variant="outline" className={`py-0.5 px-2 text-xs font-medium ${badge.color} flex items-center rounded-md`}>
-                                        {badge.icon}
-                                        {badge.label}
-                                    </Badge>
-                                </motion.div>
-                            ))}
-                        </motion.div> */}
                     </div>
                     {/* Hero Visualization */}
                     <motion.div

@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Search, XCircle, MoreHorizontal, ArrowUpRight, ArrowDownRight, GraduationCap, ChevronRight } from "lucide-react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { MarketDataItem } from "@/app/dashboard/market/page";
+import { MarketDataItem } from "../helpers/util";
 
 interface MarketViewProps {
     searchQuery: string;
