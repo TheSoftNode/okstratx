@@ -8,11 +8,37 @@ services:
     envVars:
       - key: ENV
         value: production
-      - key:OPENAI_API_KEY
+
+      # OpenAI & LLM
+      - key: OPENAI_API_KEY
         sync: false
-      - key:OKX_API_KEY
+      - key: LLM_MODEL
         sync: false
-      - key:OKX_API_SECRET
+
+      # RAG settings
+      - key: VECTOR_DB_PATH
         sync: false
-      - key:OKX_API_PASSPHRASE
+      - key: EMBEDDING_MODEL
+        sync: false
+
+      # RL settings
+      - key: RL_MODEL_PATH
+        sync: false
+      - key: SIMULATION_ENVIRONMENT
+        sync: false
+
+      # Strategy defaults
+      - key: DEFAULT_RISK_TOLERANCE
+        sync: false
+      - key: DEFAULT_TRADING_PAIRS
+        sync: false
+      - key: STRATEGY_TEMPLATES_PATH
+        sync: false
+
+      # OKX credentials
+      - key: OKX_API_KEY
+        sync: false
+      - key: OKX_API_SECRET
+        sync: false
+      - key: OKX_API_PASSPHRASE
         sync: false
